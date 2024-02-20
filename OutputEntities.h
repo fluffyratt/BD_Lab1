@@ -20,5 +20,5 @@ void OutputTicket (struct Ticket ticket, struct Passenger passenger)
     printf("Flight number: %d \n", ticket.numOfFlight);
     printf("Number of seat: %d \n", ticket.numOfSeat);
     printf("Class of ticket: %s \n", ticket.classOfTicket);
-    printf("Ticket purchase time : % s\n", ticket.date);
+    printf("Ticket purchase time : %s\n", ticket.date);
 }

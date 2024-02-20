@@ -69,7 +69,7 @@ int insertPassenger(struct Passenger passenger) {
     indexer.id = passenger.id;
     indexer.exists = 1;
     indexer.address = (passenger.id - 1) * Passenger_SIZE;
-    printf("Your client id is %d\n", passenger.id);
+    printf("Your passenger id is %d\n", passenger.id);
     fseek(indexTable, (passenger.id - 1) * INDEXER_SIZE, SEEK_SET);
     fwrite(&indexer, INDEXER_SIZE, 1, indexTable);
     fclose(database);

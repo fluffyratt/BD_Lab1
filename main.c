@@ -158,7 +158,7 @@ int main()
                 }
                 else
                 {
-                    printf("Error %s \n ", error);
+                    printf("Error %s\n ", error);
                 }
                 break;
             case 10:

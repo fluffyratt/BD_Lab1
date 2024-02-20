@@ -52,7 +52,7 @@ void inputTicket(struct Ticket *ticket)
     ticket ->numOfSeat = numOfSeat;
 
     printf("Enter class of ticket ");
-    scanf("%d", &classOfTicket);
+    scanf("%s", &classOfTicket);
     ticket ->classOfTicket = classOfTicket;
 
     printf("Enter price of ticket ");
@@ -60,7 +60,7 @@ void inputTicket(struct Ticket *ticket)
     ticket ->priceOfTicket = priceOfTicket;
 
     printf("Enter ticket's date: ");
-    scanf("%d", &date);
+    scanf("%s", date);
     strcpy(ticket->date, date);
 
 

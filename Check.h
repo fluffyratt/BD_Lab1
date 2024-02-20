@@ -60,7 +60,7 @@ int checkIfRecordExist(struct Passenger passenger, int ticketId, char* error) {
         ticketsDb = fopen(TICKET_DATA, "r+b");
         fseek(ticketsDb, ticket.nextAddress, SEEK_SET);
     }
-    strcpy(error, "The passenger do not have this order, the order has been deleted or does not exist");
+    strcpy(error, "The passenger do not have this order, the ticket has been deleted or does not exist");
     fclose(ticketsDb);
     return 0;
 }
